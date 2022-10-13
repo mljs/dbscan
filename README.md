@@ -14,10 +14,19 @@
 ## Usage
 
 ```js
-import { myModule } from 'ml-dbscan';
-
-const result = myModule(args);
+import { dbscan } from 'ml-dbscan';
+const dbscan = require('ml-dbscan);
+let dataset = var dataset = [
+    [1,1],[0,1],[1,0],
+    [10,10],[10,13],[13,13],
+    [54,54],[55,55],[89,89],[57,55]
+];
+const result = dbscan(dataset, 5, 2);
 // result is ...
+[
+  0, 0, 0,  1, 1,
+  1, 2, 2, -1, 2
+]
 ```
 
 ## License
