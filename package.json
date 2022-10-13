@@ -1,11 +1,14 @@
 {
   "name": "ml-dbscan",
-  "version": "0.0.0",
-  "description": "",
+  "version": "1.0.0",
+  "description": "dbscan",
   "main": "./lib/index.js",
   "module": "./lib-esm/index.js",
   "types": "./lib/index.d.ts",
-  "keywords": [],
+  "keywords": [
+    "clustering",
+    "dbscan"
+  ],
   "author": "Luc Patiny",
   "license": "MIT",
   "files": [
@@ -45,5 +48,8 @@
     "prettier": "^2.7.1",
     "rimraf": "^3.0.2",
     "typescript": "^4.8.4"
+  },
+  "dependencies": {
+    "ml-distance-euclidean": "^2.0.0"
   }
 }
