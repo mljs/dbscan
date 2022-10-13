@@ -15,7 +15,7 @@
 
 ```js
 import { dbscan } from 'ml-dbscan';
-const dbscan = require('ml-dbscan);
+const dbscan = require('ml-dbscan');
 let dataset = var dataset = [
     [1,1],[0,1],[1,0],
     [10,10],[10,13],[13,13],
