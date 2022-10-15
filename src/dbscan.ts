@@ -6,7 +6,7 @@ interface IPoint {
   label: number;
 }
 
-interface DBScanOptions {
+export interface DBScanOptions {
   /**
    * The maximum distance between two points for them to be considered as being in the same neighborhood.
    * @default 1
