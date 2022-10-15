@@ -19,8 +19,11 @@ This library exposes a single function dbscan.
 
 `dbscan(points:number[][] , options = {epsilon: number = 1; minPoints: number = 2; distance: (p: number[], q: number[]) => number = euclidean;}) => labels: number[]`
 points: A list of data to perform the clustering on, like `[[1], [2]]`, `[[1, 2], [[3, 4]]` or more dimensions `[[1, 2, 3, 4...],[...]]`.
+
 epsilon: The maximum distance between two points for them to be considered as being in the same neighborhood. Default is 1.
+
 minPoints: The minimum number of points in any group for them to be considered a distinct group. All other points are considered to be noise, and will receive a label of -1. Default is 2.
+
 distance: Distance calculation method of two points, default is euclidean distance.
 
 labels is the returned list of clustered group labels. These labels correspond to the data points in data with the same array index. A label of -1 indicates the point is noise. All points with a value >= 0 indicate those points are in the same cluster, e.g. all points with label 1 belong to cluster 1.
