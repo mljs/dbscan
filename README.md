@@ -7,7 +7,7 @@ Density-based spatial clustering of applications with noise ([DBSCAN](http://en.
 [![Test coverage][codecov-image]][codecov-url]
 [![npm download][download-image]][download-url]
 
-##[API Documentation](https://mljs.github.io/dbscan/)
+## [API Documentation](https://mljs.github.io/dbscan/)
 
 ## Installation
 
