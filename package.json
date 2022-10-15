@@ -1,6 +1,6 @@
 {
   "name": "ml-dbscan",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "dbscan",
   "main": "./lib/index.js",
   "module": "./lib-esm/index.js",
