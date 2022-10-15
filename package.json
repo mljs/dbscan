@@ -9,7 +9,7 @@
     "clustering",
     "dbscan"
   ],
-  "author": "Luc Patiny",
+  "author": "DoubleCorner <peiwenqi.mcs@gmail.com> (https://github.com/DoubleCorner)",
   "license": "MIT",
   "files": [
     "src",
