@@ -13,6 +13,6 @@ describe('test dbscan', () => {
     [89, 89],
     [57, 55],
   ];
-  const result = dbscan(data, 5, 2);
+  const result = dbscan(data);
   expect(result);
 });
