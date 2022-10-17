@@ -6,7 +6,7 @@ interface IPoint {
   label: number;
 }
 
-export interface DBScanOptions {
+export interface DBSCANOptions {
   /**
    * The maximum distance between two points for them to be considered as being in the same neighborhood.
    * @default 1
@@ -30,7 +30,7 @@ export interface DBScanOptions {
  * @param options dbscan related parameters.
  * @returns labels is the returned list of clustered group labels. A label of -1 indicates the point is noise
  */
-export function dbscan(points: number[][], options: DBScanOptions = {}) {
+export function dbscan(points: number[][], options: DBSCANOptions = {}) {
   if (!(points instanceof Array)) {
     throw Error(`points must be of type array, ${typeof points} given`);
   }
