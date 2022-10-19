@@ -31,12 +31,12 @@ labels is the returned list of clustered group labels. These labels correspond t
 ```js
 import { dbscan } from 'ml-dbscan';
 const dbscan = require('ml-dbscan');
-let dataset = var dataset = [
+const dataset = [
     [1,1],[0,1],[1,0],
     [10,10],[10,13],[13,13],
     [54,54],[55,55],[89,89],[57,55]
 ];
-const result = dbscan(dataset, 5, 2);
+const result = dbscan(dataset, {epsilon: 5});
 // result is ...
 [
   0, 0, 0,  1, 1,
