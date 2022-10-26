@@ -50,14 +50,14 @@ export function dbscan(points: number[][], options: DBScanOptions = {}) {
   for (const point of data) {
     // Only process unlabelled points
     if (point.label !== -1) {
-      return;
+      continue;
     }
     // Get all the points neighbors
     let neighbors = rangeQuery(point, data, epsilon, distance);
     // Check if point is noise
     if (neighbors.length < minPoints) {
       point.label = 0;
-      return;
+      continue;
     }
     // Next cluster label
     clusterId += 1;
